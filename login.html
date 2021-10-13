@@ -1,0 +1,47 @@
+<!DOTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <form id="login">
+      <input id="username" type="text" name="username" placeholder="username" />
+      <input id="password" type="password" name="password" placeholder="password" />
+      <input type="submit" value="Login"/>
+    </form>
+    <br />
+    <p>Dont have an account?</p>
+    <a href="/signup">Create an account here</a>
+
+    <script>
+        $(document).ready(function(){
+            $("#login").submit(function(e){
+              e.preventDefault(); //Prevent page refresh
+
+              var loginData = {
+                username: $("#username").val(),
+                password: $("#password").val(),
+              };
+
+              console.log(loginData);
+
+              $.post("/api/login", loginData, function(res){
+                if(res.success === true) {
+                  alert("Success!");
+                } 
+                else {
+                  if(res.reason) alert(res.reason);
+                  else alert("Unknown error");
+                }
+              });
+            });
+        })
+    </script>
+
+  </body>
+</html>

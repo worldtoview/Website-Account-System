@@ -17,6 +17,7 @@ You wil need a mongo database to be able to use this. [If you dont have one watc
 __Captcha__
 
 [Go to this website](https://www.google.com/recaptcha/admin/create)
+
 Type in anything for the website label
 
 Then for the captcha type click on reCAPTCHA v2 then "I'm not a robot" tickbox
@@ -54,7 +55,7 @@ Feel free to expand off this, this is just the basics of a signup system :)
 
 **Other Stuff**
 
-http://localhost:3000/signup - signup page\n
-http://localhost:3000/login - login page\n
-http://localhost:3000/profile - profile page (only works when logged in)\n
-http://localhost:3000/logout - logs you out of the current account\n
+http://localhost:3000/signup - signup page
+http://localhost:3000/login - login page
+http://localhost:3000/profile - profile page (only works when logged in)
+http://localhost:3000/logout - logs you out of the current account

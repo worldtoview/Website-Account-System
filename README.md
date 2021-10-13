@@ -54,7 +54,7 @@ Feel free to expand off this, this is just the basics of a signup system :)
 
 **Other Stuff**
 
-http://localhost:3000/signup - signup page
-http://localhost:3000/login - login page
-http://localhost:3000/profile - profile page (only works when logged in)
-http://localhost:3000/logout - logs you out of the current account
+http://localhost:3000/signup - signup page\n
+http://localhost:3000/login - login page\n
+http://localhost:3000/profile - profile page (only works when logged in)\n
+http://localhost:3000/logout - logs you out of the current account\n
